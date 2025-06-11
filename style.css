@@ -1,0 +1,48 @@
+body { 
+  background-color: #111; 
+  color: white; 
+  font-family: 'Malgun Gothic', 'Nanum Gothic', sans-serif; /* 한글 폰트 명시적 지정 */
+  text-align: center; 
+  margin-top: 20px; 
+}
+.output { 
+  width: 80%; 
+  max-width: 500px; 
+  min-height: 100px; 
+  background: #333; 
+  color: #fff; 
+  font-size: 24px; 
+  padding: 10px; 
+  margin: 0 auto 20px; 
+  border-radius: 8px; 
+  border: 1px solid #555; 
+  overflow-y: auto; 
+  box-sizing: border-box; 
+  text-align: left; 
+  line-height: 1.5; 
+}
+.keyboard { 
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+  width: 80%; 
+  max-width: 500px; 
+  margin: 0 auto; 
+}
+.key { 
+  background: #222; 
+  padding: 20px; 
+  border-radius: 8px; 
+  font-size: 20px; 
+  border: 1px solid #444; 
+  cursor: pointer; 
+  user-select: none; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  min-height: 60px; 
+}
+.inprogress { 
+  color: #0f0; 
+  text-decoration: underline; 
+}

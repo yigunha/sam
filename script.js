@@ -2,10 +2,16 @@ const CYCLE_DELAY = 800; // Not used in current logic, but was in original templ
 
 document.addEventListener('DOMContentLoaded', () => {
     fetch('/𐍈')
-    .then(r => r.ok && (document.getElementById('protectedContent').style.display = 'block'))
-    .catch(() => {
+      .then(r => {
+        if (r.ok) {
+          document.getElementById('protectedContent').style.display = 'block';
+        } else {
+          document.body.innerHTML = '';
+        }
+      })
+      .catch(() => {
         document.body.innerHTML = '';
-    });
+      });
 });
 
 const CYCLE_CONSONANT = {

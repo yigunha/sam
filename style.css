@@ -41,6 +41,10 @@ body {
   align-items: center; 
   justify-content: center; 
   min-height: 60px; 
+  transition: background 0.1s ease; /* 여기에 추가 */
+}
+.key:active {
+  background: #444; /* 눌렸을 때 색상 변경 (기존 #222보다 밝게) */
 }
 .inprogress { 
   color: #0f0; 
